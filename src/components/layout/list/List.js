@@ -7,7 +7,7 @@ import {  List as ListRTB,
 
 const List = () => (
   <ListRTB selectable ripple>
-    <ListSubHeaderRTB caption='Baller-Ass ListRTB' />
+    <ListSubHeaderRTB caption='My List' />
 
     <ListItemRTB
       caption='Dr. Manhattan'

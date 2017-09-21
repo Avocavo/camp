@@ -2,3 +2,23 @@
 .appBar {
     background-color: #2196F3;/*blue500*/
 }
+
+.messages {
+  /*
+  align-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-direction: row;
+  justify-content: center;
+  line-height: 1.5;
+  position: relative;
+
+  -webkit-box-align: center;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+  -webkit-font-smoothing: antialiased;
+  */
+
+  margin-right: 40px;
+}
