@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { AppBar, Checkbox, IconButton } from 'react-toolbox';
 import { Layout, NavDrawer, Panel, Sidebar } from 'react-toolbox';
 import ListTest from './ListTest';
+import AppBarTest from './AppBarTest';
 
 class LayoutTest extends React.Component {
     state = {
@@ -31,7 +32,8 @@ class LayoutTest extends React.Component {
                     <ListTest />
                 </NavDrawer>
                 <Panel>
-                    <AppBar leftIcon='menu' onLeftIconClick={ this.toggleDrawerActive } />
+                    {/* <AppBar leftIcon='menu' onLeftIconClick={ this.toggleDrawerActive } /> */}
+                    <AppBarTest />
                     <div style={{ flex: 1, overflowY: 'auto', padding: '1.8rem' }}>
                         <h1>Main Content</h1>
                         <p>Main content goes here.</p>

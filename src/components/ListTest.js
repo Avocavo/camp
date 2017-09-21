@@ -3,7 +3,7 @@ import { List, ListItem, ListSubHeader, ListDivider, ListCheckbox } from 'react-
 
 const ListTest = () => (
   <List selectable ripple>
-    <ListSubHeader caption='Explore characters' />
+    <ListSubHeader caption='Baller-Ass List' />
 
     <ListItem
       caption='Dr. Manhattan'
