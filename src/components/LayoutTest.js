@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { AppBar, Checkbox, IconButton } from 'react-toolbox';
 import { Layout, NavDrawer, Panel, Sidebar } from 'react-toolbox';
+import ListTest from './ListTest';
 
 class LayoutTest extends React.Component {
     state = {
@@ -27,9 +28,7 @@ class LayoutTest extends React.Component {
                 <NavDrawer active={this.state.drawerActive}
                     pinned={this.state.drawerPinned} permanentAt='xxxl'
                     onOverlayClick={ this.toggleDrawerActive }>
-                    <p>
-                        Navigation, account switcher, etc. go here.
-                    </p>
+                    <ListTest />
                 </NavDrawer>
                 <Panel>
                     <AppBar leftIcon='menu' onLeftIconClick={ this.toggleDrawerActive } />
