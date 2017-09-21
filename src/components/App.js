@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-//import ButtonTest from './ButtonTest';
-//import RadioTest from './dir/RadioTest';
-import { Layout } from './Layout';
+import { Layout } from './layout';
 
 class App extends Component {
   render() {

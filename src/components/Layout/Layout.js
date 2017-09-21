@@ -6,8 +6,8 @@ import { AppBar as AppBarRTB,
          NavDrawer as NavDrawerRTB,
          Panel as PanelRTB,
          Sidebar as SidebarRTB, } from 'react-toolbox';
-import { List } from '../List';
-import { AppBar } from '../AppBar';
+import { List } from '../list';
+import { AppBar } from './app_bar';
 
 class Layout extends React.Component {
     state = {
