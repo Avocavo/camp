@@ -1,10 +1,15 @@
 import React, { Component } from 'react';
-import { AppBar, Checkbox, IconButton } from 'react-toolbox';
-import { Layout, NavDrawer, Panel, Sidebar } from 'react-toolbox';
-import ListTest from './ListTest';
-import AppBarTest from './AppBarTest';
+import { AppBar as AppBarRTB,
+         Checkbox as CheckboxRTB,
+         IconButton as IconButtonRTB,
+         Layout as LayoutRTB,
+         NavDrawer as NavDrawerRTB,
+         Panel as PanelRTB,
+         Sidebar as SidebarRTB, } from 'react-toolbox';
+import { List } from '../List';
+import { AppBar } from '../AppBar';
 
-class LayoutTest extends React.Component {
+class Layout extends React.Component {
     state = {
         drawerActive: false,
         drawerPinned: false,
@@ -25,31 +30,31 @@ class LayoutTest extends React.Component {
 
     render() {
         return (
-            <Layout>
-                <NavDrawer active={this.state.drawerActive}
+            <LayoutRTB>
+                <NavDrawerRTB active={this.state.drawerActive}
                     pinned={this.state.drawerPinned} permanentAt='xxxl'
                     onOverlayClick={ this.toggleDrawerActive }>
-                    <ListTest />
-                </NavDrawer>
-                <Panel>
+                    <List />
+                </NavDrawerRTB>
+                <PanelRTB>
                     {/* <AppBar leftIcon='menu' onLeftIconClick={ this.toggleDrawerActive } /> */}
-                    <AppBarTest />
+                    <AppBar />
                     <div style={{ flex: 1, overflowY: 'auto', padding: '1.8rem' }}>
                         <h1>Main Content</h1>
                         <p>Main content goes here.</p>
-                        <Checkbox label='Pin drawer' checked={this.state.drawerPinned} onChange={this.toggleDrawerPinned} />
-                        <Checkbox label='Show sidebar' checked={this.state.sidebarPinned} onChange={this.toggleSidebar} />
+                        <CheckboxRTB label='Pin drawer' checked={this.state.drawerPinned} onChange={this.toggleDrawerPinned} />
+                        <CheckboxRTB label='Show sidebar' checked={this.state.sidebarPinned} onChange={this.toggleSidebar} />
                     </div>
-                </Panel>
-                <Sidebar pinned={ this.state.sidebarPinned } width={ 5 }>
-                    <div><IconButton icon='close' onClick={ this.toggleSidebar }/></div>
+                </PanelRTB>
+                <SidebarRTB pinned={ this.state.sidebarPinned } width={ 5 }>
+                    <div><IconButtonRTB icon='close' onClick={ this.toggleSidebar }/></div>
                     <div style={{ flex: 1 }}>
                         <p>Supplemental content goes here.</p>
                     </div>
-                </Sidebar>
-            </Layout>
+                </SidebarRTB>
+            </LayoutRTB>
         );
     }
 }
 
-export default LayoutTest;
+export default Layout;

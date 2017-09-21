@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import AppBar from 'react-toolbox/lib/app_bar';
-import Navigation from 'react-toolbox/lib/navigation';
-import Link from 'react-toolbox/lib/Link';
-import TabsTest from './TabsTest';
+import {  AppBar as AppBarRTB,
+          Navigation as NavigationRTB,
+          Link as LinkRTB } from 'react-toolbox';
+import { Tabs } from '../Tabs';
 
 {/*
 const GithubIcon = () => (
@@ -12,16 +12,16 @@ const GithubIcon = () => (
 );
 */}
 
-const AppBarTest = () => (
-  <AppBar title='Camp' > {/*leftIcon='menu' rightIcon={<GithubIcon />}*/}
-    <Navigation type='horizontal'>
-      <TabsTest />
+const AppBar = () => (
+  <AppBarRTB title='Lead Machine' > {/*leftIcon='menu' rightIcon={<GithubIcon />}*/}
+    <NavigationRTB type='horizontal'>
+      <Tabs />
       {/*
-        <Link href='http://' label='Inbox' icon='inbox' />
-        <Link href='http://' active label='Profile' icon='person' />
+        <LinkRTB href='http://' label='Inbox' icon='inbox' />
+        <LinkRTB href='http://' active label='Profile' icon='person' />
         */}
-    </Navigation>
-  </AppBar>
+    </NavigationRTB>
+  </AppBarRTB>
 );
 
-export default AppBarTest;
+export default AppBar;

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
-import {Tab, Tabs} from 'react-toolbox';
+import {  Tab as TabRTB,
+          Tabs as TabsRTB} from 'react-toolbox';
 
-class TabsTest extends React.Component {
+class Tabs extends React.Component {
   state = {
     index: 1,
     fixedIndex: 1,
@@ -27,16 +28,16 @@ class TabsTest extends React.Component {
   render () {
     return (
       <section>
-        <Tabs index={this.state.index} onChange={this.handleTabChange}>
-          <Tab label='Primary'></Tab>
-          <Tab label='Secondary' onActive={this.handleActive}></Tab>
-          <Tab label='Third' disabled></Tab>
-          <Tab label='Fourth' hidden></Tab>
-          <Tab label='Fifth'></Tab>
-        </Tabs>
+        <TabsRTB index={this.state.index} onChange={this.handleTabChange}>
+          <TabRTB label='Primary'></TabRTB>
+          <TabRTB label='Secondary' onActive={this.handleActive}></TabRTB>
+          <TabRTB label='Third' disabled></TabRTB>
+          <TabRTB label='Fourth' hidden></TabRTB>
+          <TabRTB label='Fifth'></TabRTB>
+        </TabsRTB>
       </section>
     );
   }
 }
 
-export default TabsTest;
+export default Tabs;
