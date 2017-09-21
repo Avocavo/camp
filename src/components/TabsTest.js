@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Tab, Tabs} from 'react-toolbox';
+import LayoutTest1 from './LayoutTest1';
 
 class TabsTest extends React.Component {
   state = {
