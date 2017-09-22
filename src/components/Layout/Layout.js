@@ -59,9 +59,11 @@ class Layout extends React.Component {
                       </Switch>
                     </HashRouter>
 
+                    {/*
                     <CheckboxRTB label='Pin drawer' checked={this.state.drawerPinned} onChange={this.toggleDrawerPinned} />
                     <CheckboxRTB label='Show sidebar' checked={this.state.sidebarPinned} onChange={this.toggleSidebar} />
-                    <Footer />
+                    */}
+                <Footer />
                 </PanelRTB>
 
                 <SidebarRTB pinned={ this.state.sidebarPinned } width={ 5 }>
