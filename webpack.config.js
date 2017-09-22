@@ -10,7 +10,11 @@ module.exports = {
         query: {
           presets:['react'] //move to .babelrc?
         }
-      }
+      },
+      {
+        test: /\.css$/,
+        loader: "style-loader!css-loader"
+      },
     ]
   }
 };
