@@ -10,6 +10,7 @@ import { HashRouter, Switch, Route } from 'react-router-dom';
 
 import { List } from './list';
 import { AppBar } from './app_bar';
+import { Footer } from './footer';
 
 import { Home } from '../views/home';
 import { Signup } from '../views/signup';
@@ -44,6 +45,7 @@ class Layout extends React.Component {
                     onOverlayClick={ this.toggleDrawerActive }>
                     <List />
                 </NavDrawerRTB>
+
                 <PanelRTB>
                     <AppBar />
 
@@ -59,13 +61,16 @@ class Layout extends React.Component {
 
                     <CheckboxRTB label='Pin drawer' checked={this.state.drawerPinned} onChange={this.toggleDrawerPinned} />
                     <CheckboxRTB label='Show sidebar' checked={this.state.sidebarPinned} onChange={this.toggleSidebar} />
+                    <Footer />
                 </PanelRTB>
+
                 <SidebarRTB pinned={ this.state.sidebarPinned } width={ 5 }>
                     <div><IconButtonRTB icon='close' onClick={ this.toggleSidebar }/></div>
                     <div style={{ flex: 1 }}>
                         <p>Supplemental content goes here.</p>
                     </div>
                 </SidebarRTB>
+
             </LayoutRTB>
         );
     }
