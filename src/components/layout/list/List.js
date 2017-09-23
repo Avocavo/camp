@@ -3,7 +3,7 @@ import {  List as ListRTB,
           ListItem as ListItemRTB,
           ListSubHeader as ListSubHeaderRTB,
           ListDivider as ListDividerRTB,
-          ListCheckbox as ListCheckboxRTB } from 'react-toolbox/lib/List';
+          ListCheckbox as ListCheckboxRTB } from 'react-toolbox';
 
 const List = () => (
   <ListRTB selectable ripple>
