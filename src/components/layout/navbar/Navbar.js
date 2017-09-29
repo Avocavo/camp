@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
 
-import { SettingsDropdown } from './settings_dropdown';
-
-class MyNavbar extends React.Component {
+export default class NavigationBar extends React.Component {
   constructor(props) {
     super(props);
 
@@ -22,17 +20,14 @@ class MyNavbar extends React.Component {
       <div>
         <Navbar color="faded" light toggleable>
           <NavbarToggler right onClick={this.toggle} />
-          <NavbarBrand href="/">Lead Machine</NavbarBrand>
+          <NavbarBrand href="/">reactstrap</NavbarBrand>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="#">Signup</NavLink>
+                <NavLink href="/components/">Components</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#">Login</NavLink>
-              </NavItem>
-              <NavItem>
-                <SettingsDropdown />
+                <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
@@ -41,5 +36,3 @@ class MyNavbar extends React.Component {
     );
   }
 }
-
-export default MyNavbar;
