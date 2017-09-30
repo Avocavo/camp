@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --display-error-details",
-    "start": "webpack-dev-server --watch --content-base pub"
+    "dev": "./node_modules/.bin/webpack-dev-server --watch --content-base pub"
   },
   "author": "nico",
   "license": "ISC",
