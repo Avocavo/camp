@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { HashRouter, Switch, Route } from 'react-router-dom';
+
 import { Navbar } from './layout/navbar';
 import { Footer } from './layout/footer';
 import { Home } from './pages/home';
@@ -9,11 +11,14 @@ class App extends Component {
     return (
       <div className="App">
         <Navbar />
-        <br/><br/>
-        <Home />
-        <br/><br/>
-        <Signup />
-        <br/><br/>
+
+        <HashRouter>
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/signup' exact component={Signup} />
+          </Switch>
+        </HashRouter>
+
         <Footer />
       </div>
     );
