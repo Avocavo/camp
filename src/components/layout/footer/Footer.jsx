@@ -11,6 +11,9 @@ const Footer = (props) => {
           <CardSubtitle>Card subtitle</CardSubtitle>
           <CardText>Some quick example text to build on the card title and make up the bulk of the cards content.</CardText>
           <Button>Button</Button>
+          <Button href="/#/404">404 test</Button>
+          <br/><br/>
+          <Button color="danger" href="/#/todos">ToDo's</Button>
         </CardBlock>
       </Card>
     </div>

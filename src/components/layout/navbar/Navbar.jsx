@@ -20,14 +20,20 @@ export default class NavigationBar extends React.Component {
       <div>
         <Navbar color="faded" light toggleable>
           <NavbarToggler right onClick={this.toggle} />
-          <NavbarBrand href="/">reactstrap</NavbarBrand>
+          <NavbarBrand href="/">Lead Machine</NavbarBrand>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">Components</NavLink>
+                <NavLink href="/#/signup" onClick={this.toggle}>Sign Up</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
+                <NavLink href="/#/myprofile" onClick={this.toggle}>My Profile</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/#/pro" onClick={this.toggle}>Are you a Pro?</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/#/faq" onClick={this.toggle}>FAQ</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
